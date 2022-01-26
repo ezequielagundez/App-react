@@ -1,0 +1,71 @@
+.header {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header.header--fixed {
+  top: 0;
+  position: fixed;
+  background-color: #e0752f;
+}
+
+.header.header--fixed .navbar > ul > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header .navbar-collapse a {
+  color: white;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.navbar > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > ul > li {
+  display: inline-block;
+}
+
+.navbar > ul > li > a {
+  display: block;
+  padding: 38px 16px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+/*# sourceMappingURL=header.css.map */

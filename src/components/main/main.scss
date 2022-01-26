@@ -1,0 +1,128 @@
+
+
+.section-services {
+    //@extend.section;
+
+    padding-top: 13em;
+    background-image: url("../../assets/img/section4-image.png");
+    // background-size: 52% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    max-height: 768px;
+    min-height: auto;
+    padding: 0;
+
+    .container, .row {
+        height: 100%;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .accordion {
+        background-color: #fff;
+       // @include border-radius(4px 0);
+
+        .accordion-header {
+            .accordion-button {
+                position: relative;
+                padding: 20px;
+                color: #5F6368;
+                font-size: 1.6rem;
+                width: 100%;
+                text-align: left;
+    
+                &::after {
+                    background-image: url("../../assets/img/icon-feather-chevron-up.svg");
+                }
+    
+                &:not(.collapsed)::after {
+                    background-image: url("../../assets/img/icon-feather-chevron-down.svg");
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 40px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.section-inicio {
+    .slider-item {
+        display: none;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        &.slider-item--active {
+            display: flex;
+        }
+
+        &.slider-item--first {
+            background-image: url("../../assets/img/slider-1.png");
+            background-size: cover;
+        }
+
+        h2 {
+            font-size: 4.8rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-bottom: 40px;
+        }
+
+        a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color:#e0752f;
+             border-radius:25px;
+            font-size: 1.6rem;
+            padding: 15px 30px;
+        }
+    }
+
+    .slider-nav {
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        left: auto;
+
+        > ul {
+            @extend .container;
+            padding-left: 0;
+
+            > li {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+
+                > a {
+                    display: block;
+                    font-size: 0;
+                    line-height: 0;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    padding: 5px;
+                    color: transparent;
+                    border: 0;
+                    outline: none;
+                    background-color: white;
+                    opacity: 0.3;
+                    border-radius:(25px);
+
+                    &.slider-nav--active {
+                        background-color: #e0752f;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.section-services {
+    @extend .section !optional;
+
+    padding-top: 13em;
+    
+    
+    //background-size: 52% auto;
+    height: 768px;
+    top: 2208px;
+    left: 596px;
+    background-repeat: no-repeat;
+    max-height: 768px;
+    min-height: auto;
+    padding: 0;
+    
+
+    .container, .row {
+        height: 100%;
+    }
+
+    .row {
+        align-items: center;
+        margin-left: 5rem;
+    }
+
+    .accordion {
+        background-color: rgb(199, 23, 23);
+         border-radius:(4px 0);
+         margin-top: 10rem;
+
+        .accordion-header {
+            .accordion-button {
+                position: relative;
+                padding: 20px;
+                color: #5F6368;
+                font-size: 1.6rem;
+                width: 100%;
+                text-align: left;
+    
+                &::after {
+                    background-image: url("../../assets/img/icon-feather-chevron-up.svg");
+                }
+    
+                &:not(.collapsed)::after {
+                    background-image: url("../../assets/img/icon-feather-chevron-down.svg");
+                }
+            }
+        }
+
+        .accordion-body {
+            padding: 40px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}

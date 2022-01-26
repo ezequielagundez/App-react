@@ -1,0 +1,25 @@
+.footer{
+    background-color: #343434;
+    height: 9rem;
+    
+
+
+    p{
+        font-size: 1.5rem;
+        color: white;
+        font-family: Roboto;
+    }
+}
+
+.img-footer{
+    width: 86px;
+height: 20px;
+}
+
+
+.footer-conteiner{
+    justify-content: space-around;
+    padding-top: 38px;
+    align-items: center;
+    display: flex;
+}

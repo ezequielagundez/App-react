@@ -1,0 +1,28 @@
+.footer {
+  background-color: #343434;
+  height: 9rem;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Roboto;
+}
+
+.img-footer {
+  width: 86px;
+  height: 20px;
+}
+
+.footer-conteiner {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=footer.css.map */

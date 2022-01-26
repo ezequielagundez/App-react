@@ -1,0 +1,59 @@
+.header {
+    
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+   
+
+    &.header--fixed {
+        top: 0;
+        position: fixed;
+        background-color: #e0752f;
+
+        .navbar > ul > li > a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .navbar-collapse{
+        a{
+            color: white;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+
+    > ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+            display: inline-block;
+        }
+    }
+}
+
+.navbar > ul > li > a {
+    display: block;
+    padding: 38px 16px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}

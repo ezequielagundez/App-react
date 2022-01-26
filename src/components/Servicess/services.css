@@ -1,0 +1,57 @@
+.section-services {
+  padding-top: 13em;
+  height: 768px;
+  top: 2208px;
+  left: 596px;
+  background-repeat: no-repeat;
+  max-height: 768px;
+  min-height: auto;
+  padding: 0;
+}
+
+.section-services .container, .section-services .row {
+  height: 100%;
+}
+
+.section-services .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5rem;
+}
+
+.section-services .accordion {
+  background-color: #c71717;
+  border-radius: 4px 0;
+  margin-top: 10rem;
+}
+
+.section-services .accordion .accordion-header .accordion-button {
+  position: relative;
+  padding: 20px;
+  color: #5F6368;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
+}
+
+.section-services .accordion .accordion-header .accordion-button::after {
+  background-image: url("../../assets/img/icon-feather-chevron-up.svg");
+}
+
+.section-services .accordion .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("../../assets/img/icon-feather-chevron-down.svg");
+}
+
+.section-services .accordion .accordion-body {
+  padding: 40px;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=services.css.map */
