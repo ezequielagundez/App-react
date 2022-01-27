@@ -6,25 +6,25 @@ const Header = () => {
     return (
     <header className="header ">
         <div className="container" >
-            <a href="#inicio" className="logo" >
+            <a href="#carousel" className="logo" >
                 <img src={TopLogo} alt="logo 25watts" />
             </a>
             <nav className="navbar" >
                 <ul>
                     <li>
-                        <a href="#home" > Home</a>
+                        <a href="#carousel" > Home</a>
                     </li>
                     <li>
-                        <a href="contact" > About </a>
+                        <a href="#about" > About </a>
                     </li>
                     <li>
-                        <a href="contact" >Products</a>
+                        <a href="#products" >Products</a>
                     </li>
                     <li>
-                        <a href="service" >Services</a>
+                        <a href="#services" >Services</a>
                     </li>
                     <li>
-                        <a href="contact" >Contact</a>
+                        <a href="#contact" >Contact</a>
                     </li>
 
                 </ul>

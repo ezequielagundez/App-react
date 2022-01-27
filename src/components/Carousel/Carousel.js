@@ -9,6 +9,9 @@ import "./Carousel.scss";
 
 const Slideshow = () => {
   return (
+    
+    
+    <section id="carousel" >
     <div className="Slideshow">
       <Carousel>
         <div className="carousel-item">
@@ -42,6 +45,7 @@ const Slideshow = () => {
       </Carousel  >
      
     </div >
+    </section>
   );
 };
 
